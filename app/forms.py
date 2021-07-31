@@ -14,7 +14,7 @@ class UserRegistrationForm(UserCreationForm):
 
 	class Meta:
 		model = User
-		fields = ['username','password1','password2','email']
+		fields = ['username','email','password1','password2']
 
 class LoginForm(AuthenticationForm):
 	username = UsernameField(widget=forms.TextInput(attrs={ 'autofocus':True,'class':'form-control'}))
